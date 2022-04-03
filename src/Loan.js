@@ -152,11 +152,12 @@ const styles = StyleSheet.create({
     footer: {
         backgroundColor: '#a7a8b0',
         flexDirection: 'row',
-        
+        marginHorizontal:10,
+        marginBottom:20
     },
 
     footer_text: {
-        fontSize: 20
+        fontSize: 15
     },
 
     followUs: {
