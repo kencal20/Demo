@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Loan from './src/Loan';
+import Bank from './src/Bank';
 import Home from './src/Home'
 import Studentloan from './src/Studentloan';
 import Workersloan from './src/Workersloan';
@@ -25,10 +25,16 @@ export default function App() {
           }}
         />
         <Stack.Screen name='Home' component={Home}
+          
         />
-        <Stack.Screen name='Studentloan' component={Studentloan} />
-        <Stack.Screen name='Workersloan' component={Workersloan} />
-        <Stack.Screen name='Pensionloan' component={Pensionloan} />
+        <Stack.Screen name='Studentloan' component={Studentloan} 
+        />
+        <Stack.Screen name='Workersloan' component={Workersloan} 
+        />
+        <Stack.Screen name='Pensionloan' component={Pensionloan} 
+        />
+        <Stack.Screen name='Bank' component={Bank}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
