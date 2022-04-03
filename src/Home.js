@@ -37,10 +37,11 @@ export default Home;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginHorizontal: 40
+        marginHorizontal: 20
     },
 
     welcome_text: {
+        marginTop:40,
         fontSize: 30,
         fontWeight: 'bold',
         color:'orange'
