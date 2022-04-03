@@ -10,6 +10,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 
 
 const Tab = createBottomTabNavigator();
+// Another way to use execute bottomTABs
 // const Tab = createMaterialBottomTabNavigator();
 
 const Tabs = () => {
