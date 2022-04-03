@@ -9,12 +9,14 @@ const Studentloan = ({ navigation }) => {
                 to continue their studies by loaning them money for their School which
                 in turn pay back the money with low interest
             </Text>
-            <TouchableOpacity 
-            onPress={() => {
-                navigation.navigate('Bank')
-              }} 
-              style={styles.button} >
+            <TouchableOpacity
+                onPress={() => {
+                    navigation.navigate('Bank')
+                }}
+                style={styles.button} >
+                <Text>
                     Next
+                </Text>
             </TouchableOpacity>
         </View >
     );
@@ -30,10 +32,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         fontSize: 40
     },
-    button:{
-        backgroundColor:'dodgerblue',
-        borderRadius:20,
-        borderWidth:3,
-        fontSize:40
+    button: {
+        backgroundColor: 'dodgerblue',
+        borderRadius: 20,
+        borderWidth: 3,
+        fontSize: 40
     }
 })
