@@ -1,9 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
-import { Entypo, AntDesign, FontAwesome, MaterialCommunityIcons } from '@expo/vector-icons'
+import { Entypo, FontAwesome } from '@expo/vector-icons'
+
 
 const Loan = ({ navigation }) => {
     return (
+        
         <View style={styles.container}>
             <Text style={styles.header_text}>
                 Types of loan
@@ -16,7 +18,7 @@ const Loan = ({ navigation }) => {
                     style={styles.loantype_button}
                 >
                     <Text style={styles.button_text}>
-                        Click for Student loan
+                         Students loan
                     </Text>
                 </TouchableOpacity>
 
@@ -27,7 +29,7 @@ const Loan = ({ navigation }) => {
                         }}
                         style={styles.loantype_button}>
                         <Text style={styles.button_text}>
-                            Click for Workers  loan
+                            Workers  loan
                         </Text>
                     </TouchableOpacity>
                 </View>
@@ -39,7 +41,7 @@ const Loan = ({ navigation }) => {
                         style={styles.loantype_button}
                     >
                         <Text style={styles.button_text}>
-                            Click for Pension  loan
+                             Pension  loan
                         </Text>
                     </TouchableOpacity>
                 </View>
@@ -82,14 +84,6 @@ const Loan = ({ navigation }) => {
                             </Text>
                         </Text>
                     </View>
-                    <View><Text >
-                        <TouchableOpacity style={styles.linkedin_button}>
-                            <AntDesign name='linkedin-square' size={30} color='black' />
-                        </TouchableOpacity>
-                        <Text style={styles.footer_text}>
-                            linkedin</Text>
-                    </Text>
-                    </View>
                 </View>
                 <View style={styles.contactUs}>
                     <Text style={styles.ContactUs_header}>
@@ -113,9 +107,6 @@ const Loan = ({ navigation }) => {
                             instaloan@biz.com
                         </Text>
                     </Text>
-                    <TouchableOpacity>
-                        <Entypo name='skype' size={30} />
-                    </TouchableOpacity>
                 </View>
             </View>
         </View>
@@ -130,13 +121,15 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
-        justifyContent: 'center',
-        marginTop:80
+        justifyContent:'center'
+        
+       
     },
 
     header_text: {
-        fontSize: 25,
-        fontWeight: 'bold'
+        fontSize: 40,
+        fontWeight: 'bold',
+      
     },
 
     button_text: {
@@ -146,17 +139,20 @@ const styles = StyleSheet.create({
     loantype_button: {
         borderWidth: 3,
         borderRadius: 15,
-        marginVertical: 70,
-        marginTop: 30,
+        marginVertical: 50,
+        
+    
 
     },
 
-
+    button_text:{
+     fontSize:50
+    },
 
     footer: {
         backgroundColor: '#a7a8b0',
         flexDirection: 'row',
-
+        
     },
 
     footer_text: {
