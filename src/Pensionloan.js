@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 
-const Pensionloan = () => {
+const Pensionloan = ({navigation}) => {
     return (
         <View style={styles.container}> 
             <Text>
@@ -9,6 +9,13 @@ const Pensionloan = () => {
              to continue their studies by loaning them money for their School which 
              in turn pay back the money with low interest
          </Text>
+         <TouchableOpacity 
+            onPress={() => {
+                navigation.navigate('Bank')
+              }} 
+              style={styles.button} >
+                    Next
+            </TouchableOpacity>
         </View>
     );
 }
@@ -21,5 +28,11 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
+    },
+    button:{
+        backgroundColor:'dodgerblue',
+        borderRadius:20,
+        borderWidth:3,
+        fontSize:40
     }
 })
