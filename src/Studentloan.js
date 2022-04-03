@@ -13,8 +13,8 @@ const Studentloan = ({ navigation }) => {
                 onPress={() => {
                     navigation.navigate('Bank')
                 }}
-                style={styles.button} >
-                <Text>
+            >
+                <Text style={styles.button}>
                     Next
                 </Text>
             </TouchableOpacity>
@@ -34,8 +34,8 @@ const styles = StyleSheet.create({
     },
     button: {
         backgroundColor: 'dodgerblue',
-        borderRadius: 20,
-        borderWidth: 3,
-        fontSize: 40
+        borderRadius: 10,
+        borderWidth: 2,
+        fontSize: 30
     }
 })
