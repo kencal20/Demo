@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
 
         color: 'white',
         marginLeft: 30,
-        fontSize:30
+        fontSize:25
     },
 
 })
