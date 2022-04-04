@@ -71,7 +71,9 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white',
         marginHorizontal: 40,
-        marginVertical: 50
+        marginVertical: 50,
+        alignItems:'center',
+        justifyContent:'center'
 
 
     },
