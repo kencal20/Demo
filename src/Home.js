@@ -72,6 +72,7 @@ const styles = StyleSheet.create({
         height: 200,
         marginBottom: 40,
         alignSelf: 'center',
+        borderRadius:100
 
     },
     link_ref: {
