@@ -72,8 +72,10 @@ const styles = StyleSheet.create({
         color: 'white',
         marginHorizontal: 40,
         marginVertical: 50,
-        alignItems:'center',
-        justifyContent:'center'
+        top:60,
+        left:25
+       
+        
 
 
     },
