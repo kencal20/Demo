@@ -95,9 +95,9 @@ const styles = StyleSheet.create({
     },
     Follow: {
         marginHorizontal: 10,
-        marginVertical: 30,
+        marginVertical: 25,
         backgroundColor: '#364bba',
-        borderRadius:20,
+        borderRadius:15,
         height: 200,
         width: 200,
          alignItems:'center',
@@ -105,18 +105,19 @@ const styles = StyleSheet.create({
 
     },
     fb: { 
-        left: -15
+        left: -10
 
     },
     twitter:{
-        left: -15
+        left: -19,
+       
     },
     Insta:{
-        left: -15,
+        left: -10,
         top:-70
     },
     linkedin:{
-        left: -15,
+        left: -19,
         top:-70
         
     },
