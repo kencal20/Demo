@@ -3,7 +3,8 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native'
 import Loan from "../Loan";
 import Home from "../Home";
-import { AntDesign, FontAwesome } from '@expo/vector-icons'
+import Follow from "../follow";
+import { AntDesign, FontAwesome, MaterialCommunityIcons } from '@expo/vector-icons'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 
 
@@ -41,8 +42,6 @@ const Tabs = () => {
 
         >
             <Tab.Screen name='Home' component={Home} options={{
-                        
-
                 tabBarIcon: ({ focused }) => (
                     <View>
                         <AntDesign name='home' size={30}
@@ -57,6 +56,15 @@ const Tabs = () => {
                 tabBarIcon: ({ focused }) => (
                     <View>
                         <FontAwesome name='money' size={30}
+                        />
+                    </View>
+                )
+            }} />
+
+            <Tab.Screen name='follow' component={Follow} options={{
+                tabBarIcon: ({ focused }) => (
+                    <View>
+                        <MaterialCommunityIcons name='contacts' size={30}
                         />
                     </View>
                 )
