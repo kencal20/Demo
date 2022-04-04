@@ -141,7 +141,9 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white',
         marginVertical:40,
-       marginHorizontal:20
+       marginHorizontal:20,
+       alignItems:'center',
+       justifyContent:'center'
     },
 
     contactUs: {
