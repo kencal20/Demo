@@ -50,7 +50,7 @@ export default Studentloan;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#364bba',
+        backgroundColor: '#045161',
         alignItems: 'center',
         justifyContent: 'center',
 
