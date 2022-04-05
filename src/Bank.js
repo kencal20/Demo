@@ -4,7 +4,7 @@ import scb from '../assets/Scb.png'
 import fidelity from '../assets/Fidelity.jpg'
 import absa from '../assets/Absa.png'
 import ecobank from '../assets/Ecobank.png'
-import { } from 'react-native-web';
+
 const Bank = () => {
     return (
         <View style={styles.container}>
@@ -32,7 +32,7 @@ export default Bank;
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor
+        backgroundColor: 'dodgerblue'
     },
     img: {
         width: 300,
