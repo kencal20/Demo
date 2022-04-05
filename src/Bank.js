@@ -8,22 +8,38 @@ import ecobank from '../assets/Ecobank.png'
 const Bank = () => {
     return (
         <View style={styles.container}>
-            <TouchableOpacity>
+            <View>
+                <Text style={styles.header_text}>
+                    Please select by clicking one of these banks
+                </Text>
+            </View>
+            
+            <TouchableOpacity style={styles.scb}>
                 <Image source={scb} style={styles.img} />
             </TouchableOpacity>
 
-            <TouchableOpacity>
+            <TouchableOpacity style={styles.fidelity}>
                 <Image source={fidelity} style={styles.img} />
             </TouchableOpacity>
-
-            <TouchableOpacity>
-                <Image source={absa} style={styles.img} />
-            </TouchableOpacity>
-
-            <TouchableOpacity>
+       
+            <TouchableOpacity style={styles.ecobank}>
                 <Image source={ecobank} style={styles.img} />
             </TouchableOpacity>
         
+
+        <View>
+        <View style={styles.back_button}>
+                        <TouchableOpacity
+                            onPress={() => {
+                                navigation.navigate('Loan')
+                            }}
+                        >
+                            <Text style={styles.button}>
+                                Back
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+        </View>
         </View>
     );
 }
@@ -32,13 +48,43 @@ export default Bank;
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: 'dodgerblue'
+        backgroundColor: 'dodgerblue',
+        alignItems:'center',
+        justifyContent:'center',
+        
+        
+        
+    },
+    header_text:{
+        fontSize:30,
+        color:'white',
+        fontWeight:'bold',
+        marginHorizontal:30,
+        marginVertical:80,
+        alignItems:'center',
+        justifyContent:'center',
+        
+
     },
     img: {
         width: 300,
         marginVertical: 10,
         marginHorizontal: 20
 
-    }
+    },
 
+
+ back_button: {
+        backgroundColor: '#6868a1',
+        borderWidth: 0,
+        borderRadius: 10,
+        height: 50,
+        width: 150,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginVertical:100,
+        marginHorizontal:130,
+        bottom:50
+
+    }
 })
