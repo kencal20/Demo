@@ -66,13 +66,13 @@ const styles = StyleSheet.create({
         
 
     },
+
     img: {
         width: 300,
         marginVertical: 10,
         marginHorizontal: 20
 
     },
-
 
  back_button: {
         backgroundColor: '#6868a1',
@@ -84,7 +84,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         marginVertical:100,
         marginHorizontal:130,
-        bottom:50
+        bottom:70
 
+    },
+    
+    button:{
+        color:'white'
     }
 })
