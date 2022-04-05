@@ -17,32 +17,27 @@ export default function App() {
     <NavigationContainer >
 
       <Stack.Navigator
-
+  screenOptions={{
+    headerShown: false,
+  }}
       >
         <Stack.Screen name='Main' component={Main}
-          options={{
-            headerShown: false,
-          }}
+       
         />
         <Stack.Screen name='Home' component={Home}
           
         />
         <Stack.Screen name='Studentloan' component={Studentloan} 
-           options={{
-            headerShown: false,
-          }}
+         
         />
         <Stack.Screen name='Workersloan' component={Workersloan} 
-           options={{
-            headerShown: false,
-          }}
+         
         />
         <Stack.Screen name='Pensionloan' component={Pensionloan} 
-           options={{
-            headerShown: false,
-          }}
+        
         />
         <Stack.Screen name='Bank' component={Bank}
+           
         />
       </Stack.Navigator>
     </NavigationContainer>
