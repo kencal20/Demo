@@ -7,7 +7,7 @@ import ecobank from '../assets/Ecobank.png'
 import { } from 'react-native-web';
 const Bank = () => {
     return (
-        <View>
+        <View style={styles.container}>
             <TouchableOpacity>
                 <Image source={scb} style={styles.img} />
             </TouchableOpacity>
@@ -19,13 +19,11 @@ const Bank = () => {
             <TouchableOpacity>
                 <Image source={absa} style={styles.img} />
             </TouchableOpacity>
-            
+
             <TouchableOpacity>
                 <Image source={ecobank} style={styles.img} />
             </TouchableOpacity>
-            <Text>
-                Bank
-            </Text>
+        
         </View>
     );
 }
@@ -33,7 +31,9 @@ const Bank = () => {
 export default Bank;
 
 const styles = StyleSheet.create({
-
+    container:{
+        backgroundColor
+    },
     img: {
         width: 300,
         marginVertical: 10,
