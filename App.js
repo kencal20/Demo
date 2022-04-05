@@ -37,7 +37,9 @@ export default function App() {
         
         />
         <Stack.Screen name='Bank' component={Bank}
-           
+           options={{
+            headerShown: true,
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>
