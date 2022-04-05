@@ -13,33 +13,33 @@ const Bank = () => {
                     Please select by clicking one of these banks
                 </Text>
             </View>
-            
-            <TouchableOpacity style={styles.scb}>
-                <Image source={scb} style={styles.img} />
-            </TouchableOpacity>
+            <View style={styles.b_list}>
+                <TouchableOpacity style={styles.scb}>
+                    <Image source={scb} style={styles.img} />
+                </TouchableOpacity>
 
-            <TouchableOpacity style={styles.fidelity}>
-                <Image source={fidelity} style={styles.img} />
-            </TouchableOpacity>
-       
-            <TouchableOpacity style={styles.ecobank}>
-                <Image source={ecobank} style={styles.img} />
-            </TouchableOpacity>
-        
+                <TouchableOpacity style={styles.fidelity}>
+                    <Image source={fidelity} style={styles.img} />
+                </TouchableOpacity>
 
-        <View>
-        <View style={styles.back_button}>
-                        <TouchableOpacity
-                            onPress={() => {
-                                navigation.navigate('Loan')
-                            }}
-                        >
-                            <Text style={styles.button}>
-                                Back
-                            </Text>
-                        </TouchableOpacity>
-                    </View>
-        </View>
+                <TouchableOpacity style={styles.ecobank}>
+                    <Image source={ecobank} style={styles.img} />
+                </TouchableOpacity>
+            </View>
+
+            <View>
+                <View style={styles.back_button}>
+                    <TouchableOpacity
+                        onPress={() => {
+                            navigation.navigate('Loan')
+                        }}
+                    >
+                        <Text style={styles.button}>
+                            Back
+                        </Text>
+                    </TouchableOpacity>
+                </View>
+            </View>
         </View>
     );
 }
@@ -47,23 +47,23 @@ const Bank = () => {
 export default Bank;
 
 const styles = StyleSheet.create({
-    container:{
+    container: {
         backgroundColor: 'dodgerblue',
-        alignItems:'center',
-        justifyContent:'center',
-        
-        
-        
+        alignItems: 'center',
+        justifyContent: 'center',
+
+
+
     },
-    header_text:{
-        fontSize:30,
-        color:'white',
-        fontWeight:'bold',
-        marginHorizontal:30,
-        marginVertical:80,
-        alignItems:'center',
-        justifyContent:'center',
-        
+    header_text: {
+        fontSize: 30,
+        color: 'white',
+        fontWeight: 'bold',
+        marginHorizontal: 30,
+        marginVertical: 80,
+        alignItems: 'center',
+        justifyContent: 'center',
+
 
     },
 
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
 
     },
 
- back_button: {
+    back_button: {
         backgroundColor: '#6868a1',
         borderWidth: 0,
         borderRadius: 10,
@@ -82,13 +82,16 @@ const styles = StyleSheet.create({
         width: 150,
         alignItems: 'center',
         justifyContent: 'center',
-        marginVertical:100,
-        marginHorizontal:130,
-        bottom:70
+        marginVertical: 100,
+        marginHorizontal: 130,
+        bottom: 100
 
     },
-    
-    button:{
-        color:'white'
+    b_list: {
+        bottom:50
+    },
+
+    button: {
+        color: 'white'
     }
 })
