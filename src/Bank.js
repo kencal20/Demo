@@ -2,10 +2,9 @@ import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
 import scb from '../assets/Scb.png'
 import fidelity from '../assets/Fidelity.jpg'
-import absa from '../assets/Absa.png'
 import ecobank from '../assets/Ecobank.png'
 
-const Bank = () => {
+const Bank = (navigation) => {
     return (
         <View style={styles.container}>
             <View>
@@ -27,19 +26,7 @@ const Bank = () => {
                 </TouchableOpacity>
             </View>
 
-            <View>
-                <View style={styles.back_button}>
-                    <TouchableOpacity
-                        onPress={() => {
-                            navigation.navigate('Loan')
-                        }}
-                    >
-                        <Text style={styles.button}>
-                            Back
-                        </Text>
-                    </TouchableOpacity>
-                </View>
-            </View>
+          
         </View>
     );
 }
@@ -51,6 +38,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'dodgerblue',
         alignItems: 'center',
         justifyContent: 'center',
+        bottom:10
 
 
 
@@ -74,24 +62,7 @@ const styles = StyleSheet.create({
 
     },
 
-    back_button: {
-        backgroundColor: '#6868a1',
-        borderWidth: 0,
-        borderRadius: 10,
-        height: 50,
-        width: 150,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginVertical: 100,
-        marginHorizontal: 130,
-        bottom: 100
-
-    },
-    b_list: {
-        bottom:50
-    },
-
-    button: {
-        color: 'white'
+    b_list:{
+        bottom:70
     }
 })
