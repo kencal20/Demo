@@ -6,7 +6,8 @@ import Home from './src/Home'
 import Studentloan from './src/Studentloan';
 import Workersloan from './src/Workersloan';
 import Pensionloan from './src/Pensionloan';
-import Main from './src/components/Main'
+import Main from './src/components/Main';
+import Completescreen from './src/CompleteScreen';
 import React from 'react';
 
 
@@ -41,6 +42,7 @@ export default function App() {
             headerShown: true,
           }}
         />
+        <Stack.Screen name='Completescreen' component={Completescreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

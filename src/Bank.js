@@ -4,7 +4,7 @@ import scb from '../assets/Scb.png'
 import fidelity from '../assets/Fidelity.jpg'
 import ecobank from '../assets/Ecobank.png'
 
-const Bank = (navigation) => {
+const Bank = ({navigation}) => {
     return (
         <View style={styles.container}>
             <View>
@@ -13,20 +13,34 @@ const Bank = (navigation) => {
                 </Text>
             </View>
             <View style={styles.b_list}>
-                <TouchableOpacity style={styles.scb}>
-                    <Image source={scb} style={styles.img} />
+                <TouchableOpacity style={styles.scb}
+                    onPress={() => {
+                        navigation.navigate('Completescreen')
+                    }}>
+                    <Image source={scb} style={styles.img}
+
+                    />
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.fidelity}>
-                    <Image source={fidelity} style={styles.img} />
+                <TouchableOpacity style={styles.fidelity}
+                    onPress={() => {
+                        navigation.navigate('Completescreen')
+                    }}>
+                    <Image source={fidelity} style={styles.img}
+
+                    />
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.ecobank}>
+                <TouchableOpacity style={styles.ecobank}
+                    onPress={() => {
+                        navigation.navigate('Completescreen')
+                    }}
+                >
                     <Image source={ecobank} style={styles.img} />
                 </TouchableOpacity>
             </View>
 
-          
+
         </View>
     );
 }
@@ -38,7 +52,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'dodgerblue',
         alignItems: 'center',
         justifyContent: 'center',
-        bottom:10
+        bottom: 10
 
 
 
@@ -62,7 +76,7 @@ const styles = StyleSheet.create({
 
     },
 
-    b_list:{
-        bottom:70
+    b_list: {
+        bottom: 70
     }
 })
