@@ -42,7 +42,11 @@ export default function App() {
             headerShown: true,
           }}
         />
-        <Stack.Screen name='Completescreen' component={Completescreen}/>
+        <Stack.Screen name='Completescreen' component={Completescreen}
+             options={{
+              headerShown: true,
+            }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
