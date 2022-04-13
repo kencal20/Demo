@@ -4,6 +4,7 @@ import scb from '../assets/Scb.png'
 import fidelity from '../assets/Fidelity.jpg'
 import ecobank from '../assets/Ecobank.png'
 
+
 const Bank = ({navigation}) => {
     return (
         <View style={styles.container}>
@@ -15,7 +16,7 @@ const Bank = ({navigation}) => {
             <View style={styles.b_list}>
                 <TouchableOpacity style={styles.scb}
                     onPress={() => {
-                        navigation.navigate('Completescreen')
+                        navigation.navigate('Completescreen',{newTitle:'Standard Chartered bank'})
                     }}>
                     <Image source={scb} style={styles.img}
 
@@ -24,7 +25,7 @@ const Bank = ({navigation}) => {
 
                 <TouchableOpacity style={styles.fidelity}
                     onPress={() => {
-                        navigation.navigate('Completescreen')
+                        navigation.navigate('Completescreen',{newTitle:'Fidelity bank'})
                     }}>
                     <Image source={fidelity} style={styles.img}
 
@@ -33,7 +34,7 @@ const Bank = ({navigation}) => {
 
                 <TouchableOpacity style={styles.ecobank}
                     onPress={() => {
-                        navigation.navigate('Completescreen')
+                        navigation.navigate('Completescreen',{newTitle:'Ecobank'})
                     }}
                 >
                     <Image source={ecobank} style={styles.img} />
