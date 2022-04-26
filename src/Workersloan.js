@@ -79,7 +79,9 @@ const styles = StyleSheet.create({
     },
     buttons: {
         flexDirection: 'row',
-         marginVertical:20
+         marginVertical:20,
+         top:40,
+         right:10
     },
     button: {
         fontSize: 20,
@@ -100,7 +102,8 @@ const styles = StyleSheet.create({
         fontSize: 20,
         alignItems: 'center',
         justifyContent: 'center',
-        marginHorizontal: 20
+        marginHorizontal: 20,
+        left:30
 
     }
 

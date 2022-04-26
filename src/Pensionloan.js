@@ -1,12 +1,12 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity,Image } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native'
 import pension from '../assets/pension.jpg'
 const Pensionloan = ({ navigation }) => {
     return (
         <View style={styles.container}>
-        <View >
-        <Image source={pension} style={styles.image} />
-        </View>
+            <View >
+                <Image source={pension} style={styles.image} />
+            </View>
             <Text style={styles.header}>
                 Pension Loan
             </Text>
@@ -41,67 +41,70 @@ const Pensionloan = ({ navigation }) => {
                 </View>
             </View>
         </View >
-  
-);
+
+    );
 }
 
 export default Pensionloan;
 
 const styles = StyleSheet.create({
-container: {
-    flex: 1,
-    backgroundColor: '#045161',
-    alignItems: 'center',
-    justifyContent: 'center',
+    container: {
+        flex: 1,
+        backgroundColor: '#045161',
+        alignItems: 'center',
+        justifyContent: 'center',
 
-},
+    },
 
 
-image:{
-    width: 300,
-    height:300,
-    marginBottom: 40,
-    alignSelf: 'center',
-    borderRadius:200
-},
-header: {
-    color: 'white',
-    fontSize: 30,
-    marginVertical:30,
-    right:70
+    image: {
+        width: 300,
+        height: 300,
+        marginBottom: 40,
+        alignSelf: 'center',
+        borderRadius: 200
+    },
+    header: {
+        color: 'white',
+        fontSize: 30,
+        marginVertical: 30,
+        right: 70
 
-},
-subtext: {
-    color: 'white',
-    marginHorizontal:30,
+    },
+    subtext: {
+        color: 'white',
+        marginHorizontal: 30,
 
-   
-},
-buttons: {
-    flexDirection: 'row',
-     marginVertical:20
-},
-button: {
-    fontSize: 20,
-    color: 'white'
-},
-button1: {
-    backgroundColor: 'dodgerblue',
-    borderWidth: 0,
-    borderRadius: 10,
-    height: 50,
-    width: 150,
-    alignItems: 'center',
-    justifyContent: 'center'
 
-}
-,
-button2: {
-    fontSize: 20,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginHorizontal: 20
+    },
+    buttons: {
+        flexDirection: 'row',
+        marginVertical: 20,
+        top: 40,
+        right:10
+    },
+    button: {
+        fontSize: 20,
+        color: 'white'
+    },
+    button1: {
+        backgroundColor: 'dodgerblue',
+        borderWidth: 0,
+        borderRadius: 10,
+        height: 50,
+        width: 150,
+        alignItems: 'center',
+        justifyContent: 'center'
 
-}
+    }
+    ,
+    button2: {
+        fontSize: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginHorizontal: 20,
+        left:30
+
+    }
 
 })
